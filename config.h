@@ -95,7 +95,41 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
-#include "/home/chief/.cache/wal/colors-wal-st.h"
+// #include "/home/chief/.cache/wal/colors-wal-st.h"
+static const char *colorname[] = {
+	/* 8 normal colors */
+	"#221f22",
+	"#ff6188",
+	"#a9dc76",
+	"#ffd866",
+	"#78dce8",
+	"#ab9df2",
+	"#ae81ff",
+	"#c1c0c0",
+
+	/* 8 bright colors */
+	"#403e41",
+	"#ff6188",
+	"#a9dc76",
+	"#ffd866",
+	"#78dce8",
+	"#ab9df2",
+	"#ae81ff",
+	"#c1c0c0",
+
+	[255] = 0,
+	
+	/* more colors can be added after 255 to use with DefaultXX */
+	"#c1c0c0",
+	"#403e41",
+	"#ffffff", /* default foreground colour */
+	"#221f22", /* default background colour */
+};
+
+unsigned int defaultfg = 258;
+unsigned int defaultbg = 259;
+unsigned int defaultcs = 256;
+static unsigned int defaultrcs = 257;
 
 /*
  * Default shape of cursor
