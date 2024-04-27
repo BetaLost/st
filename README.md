@@ -8,3 +8,6 @@
 | --- | --- |
 | Alt + Up Arrow | Scroll up (1 line) |
 | Alt + Down Arrow | Scroll down (1 line) |
+| Alt + Equal | Increase font size |
+| Alt + Minus | Decrease font size |
+| Alt + r | Reset font size |
